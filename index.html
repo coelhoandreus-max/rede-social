@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Comunidade</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/feed.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                ✝
+            </div>
+
+            <h1>Comunidade</h1>
+
+        </div>
+
+
+        <div class="pesquisa">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                placeholder="Pesquisar..."
+            >
+
+        </div>
+
+
+        <div class="header-acoes">
+
+            <button class="icone-header">
+                ♡
+            </button>
+
+            <button class="icone-header">
+                🔔
+            </button>
+
+            <button class="foto-perfil">
+                ?
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ESTRUTURA PRINCIPAL -->
+
+    <main class="layout">
+
+
+        <!-- MENU LATERAL -->
+
+        <aside class="menu">
+
+            <nav>
+
+                <a href="index.html" class="menu-link ativo">
+                    <span>⌂</span>
+                    Início
+                </a>
+
+                <a href="historias.html" class="menu-link">
+                    <span>▶</span>
+                    Histórias
+                </a>
+
+                <a href="mensagens.html" class="menu-link">
+                    <span>▢</span>
+                    Mensagens
+                </a>
+
+                <a href="notificacoes.html" class="menu-link">
+                    <span>♧</span>
+                    Notificações
+                </a>
+
+                <a href="membros.html" class="menu-link">
+                    <span>♧</span>
+                    Membros
+                </a>
+
+                <a href="perfil.html" class="menu-link">
+                    <span>○</span>
+                    Perfil
+                </a>
+
+            </nav>
+
+
+            <div class="menu-separador"></div>
+
+
+            <a href="configuracoes.html" class="menu-link">
+
+                <span>⚙</span>
+
+                Configurações
+
+            </a>
+
+        </aside>
+
+
+
+        <!-- CONTEÚDO -->
+
+        <section class="conteudo">
+
+
+            <!-- STORIES -->
+
+            <section class="stories">
+
+                <div class="stories-topo">
+
+                    <h2>Momentos</h2>
+
+                    <button>
+                        Ver todos
+                    </button>
+
+                </div>
+
+
+                <div class="stories-list" id="stories">
+
+                    <!--
+                        Os stories serão
+                        adicionados depois
+                        pelo JavaScript.
+                    -->
+
+                </div>
+
+            </section>
+
+
+
+          <section class="criar-post">
+
+    <div class="foto-perfil">
+        ?
+    </div>
+
+    <button class="campo-post" id="abrir-publicacao">
+        No que você está pensando?
+    </button>
+
+    <button class="botao-publicar" id="botao-publicar">
+        Publicar
+    </button>
+
+</section>
+
+
+<div class="janela-publicacao" id="janela-publicacao">
+
+    <div class="publicacao-caixa">
+
+        <div class="publicacao-topo">
+
+            <h2>Criar publicação</h2>
+
+            <button id="fechar-publicacao">
+                ×
+            </button>
+
+        </div>
+
+
+        <textarea
+            id="texto-publicacao"
+            placeholder="No que você está pensando?"
+        ></textarea>
+
+
+        <div class="publicacao-acoes">
+
+            <button id="cancelar-publicacao">
+                Cancelar
+            </button>
+
+            <button id="confirmar-publicacao">
+                Publicar
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- CABEÇALHO DO FEED -->
+
+            <div class="feed-topo">
+
+                <h2>Publicações</h2>
+
+
+                <button>
+
+                    Mais recentes ▾
+
+                </button>
+
+            </div>
+
+
+
+            <!-- FEED -->
+
+            <section
+                class="feed"
+                id="feed"
+            >
+
+                <!--
+                    As publicações serão
+                    adicionadas posteriormente
+                    pelo JavaScript.
+                -->
+
+            </section>
+
+
+        </section>
+
+
+
+        <!-- LADO DIREITO -->
+
+        <aside class="lateral-direita">
+
+
+            <section class="card-lateral">
+
+                <div class="card-titulo">
+
+                    <h2>Próximos eventos</h2>
+
+                </div>
+
+
+                <div id="eventos">
+
+                    <!--
+                        Eventos serão
+                        adicionados depois.
+                    -->
+
+                </div>
+
+            </section>
+
+
+
+            <section class="card-lateral">
+
+                <div class="card-titulo">
+
+                    <h2>Membros</h2>
+
+                </div>
+
+
+                <div id="membros">
+
+                    <!--
+                        Membros serão
+                        adicionados depois.
+                    -->
+
+                </div>
+
+            </section>
+
+
+
+            <section class="card-biblia">
+
+                <span>
+                    PALAVRA DO DIA
+                </span>
+
+
+                <div id="palavra-dia">
+
+                    <!--
+                        Palavra será
+                        adicionada depois.
+                    -->
+
+                </div>
+
+            </section>
+
+
+        </aside>
+
+    </main>
+
+
+
+    <!-- MENU MOBILE -->
+
+    <nav class="menu-mobile">
+
+        <a
+            href="index.html"
+            class="ativo"
+        >
+            ⌂
+            <span>Início</span>
+        </a>
+
+
+        <a href="historias.html">
+
+            ▶
+
+            <span>Histórias</span>
+
+        </a>
+
+
+        <a href="publicar.html">
+
+            +
+
+            <span>Publicar</span>
+
+        </a>
+
+
+        <a href="mensagens.html">
+
+            ▢
+
+            <span>Mensagens</span>
+
+        </a>
+
+
+        <a href="perfil.html">
+
+            ○
+
+            <span>Perfil</span>
+
+        </a>
+
+    </nav>
+
+
+</body>
+<script src="js/dados.js"></script>
+<script src="js/script.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/historias.js"></script>
+<script src="js/publicar.js"></script>
+</html>
